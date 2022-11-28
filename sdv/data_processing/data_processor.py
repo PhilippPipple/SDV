@@ -511,7 +511,7 @@ class DataProcessor:
                 column_data = anonymized_data[column_name]
             elif column_name == self._primary_key:
                 column_data = primary_keys[column_name]
-            elif column_name in reversed_data:
+            else:
                 column_data = reversed_data[column_name]
 
             dtype = self._dtypes[column_name]
