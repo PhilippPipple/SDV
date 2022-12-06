@@ -22,7 +22,7 @@ from sdv.utils import get_package_versions, throw_version_mismatch_warning
 LOGGER = logging.getLogger(__name__)
 COND_IDX = str(uuid.uuid4())
 FIXED_RNG_SEED = 73251
-TMP_FILE_NAME = '.sample{COND_IDX}.csv.temp'
+TMP_FILE_NAME = f'.sample{COND_IDX}.csv.temp'
 DISABLE_TMP_FILE = 'disable'
 
 
